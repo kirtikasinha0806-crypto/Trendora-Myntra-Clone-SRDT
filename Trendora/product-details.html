@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendora - Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- HEADER & NAVIGATION                        -->
+    <!-- ========================================== -->
+    <header>
+        <h1>Trendora</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT                               -->
+    <!-- ========================================== -->
+    <main>
+
+        <!-- Navigation back to catalog -->
+        <p><a href="products.html">&larr; Back to All Products</a></p>
+
+        <!-- ========================================== -->
+        <!-- PRODUCT DETAILS CONTAINER                  -->
+        <!-- Note: In Phase 3, JavaScript will read the -->
+        <!-- '?id=' URL parameter and dynamically       -->
+        <!-- populate these placeholder fields.         -->
+        <!-- ========================================== -->
+        <section id="product-details-container">
+            <h2>Product Details</h2>
+
+            <!-- Product Image Placeholder -->
+            <div>
+                <!-- Dynamic product image placeholder (defaults to Product 1) -->
+                <img id="detail-product-image" src="images/Men's White T-shirt.jpg" alt="Selected Product Image" width="300">
+            </div>
+
+            <!-- Product Information -->
+            <div>
+                <!-- Product Name -->
+                <h3 id="detail-product-name">Product Name Placeholder</h3>
+
+                <!-- Product Category -->
+                <p><strong>Category:</strong> <span id="detail-product-category">Clothing / Footwear / Accessories</span></p>
+
+                <!-- Product Price -->
+                <p><strong>Price:</strong> <span id="detail-product-price">₹0</span></p>
+
+                <!-- Product Description -->
+                <p><strong>Description:</strong></p>
+                <p id="detail-product-description">A comfortable and stylish fashion product made with premium materials, designed for everyday wear and long-lasting durability.</p>
+
+                <!-- Size Options Placeholder -->
+                <div>
+                    <label for="detail-product-size"><strong>Select Size:</strong></label>
+                    <select id="detail-product-size" name="size">
+                        <option value="S">S - Small</option>
+                        <option value="M">M - Medium</option>
+                        <option value="L">L - Large</option>
+                        <option value="XL">XL - Extra Large</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Quantity Placeholder -->
+                <div>
+                    <label for="detail-product-quantity"><strong>Quantity:</strong></label>
+                    <input type="number" id="detail-product-quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+
+                <br>
+
+                <!-- Action Button Placeholders -->
+                <div>
+                    <button type="button" id="add-to-cart-btn">Add to Cart</button>
+                    <button type="button" id="add-to-wishlist-btn">Add to Wishlist</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer>
+        <p>&copy; 2026 Trendora. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
