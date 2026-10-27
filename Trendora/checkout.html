@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendora - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Trendora</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Page Heading -->
+        <section>
+            <h2>Checkout</h2>
+            <p>Please enter your delivery details to place your demo order.</p>
+        </section>
+
+        <!-- Delivery Information Form -->
+        <section>
+            <h3>Delivery Information</h3>
+            <form id="checkout-form" action="#" method="post">
+                <div>
+                    <label for="customer-name">Full Name:</label>
+                    <input type="text" id="customer-name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="customer-phone">Phone Number:</label>
+                    <input type="tel" id="customer-phone" name="phone" placeholder="Enter 10-digit mobile number"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="customer-address">Delivery Address:</label>
+                    <textarea id="customer-address" name="address" rows="3" cols="30"
+                        placeholder="Street address, house number, area" required></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="customer-city">City:</label>
+                    <input type="text" id="customer-city" name="city" placeholder="City / Town" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="customer-pincode">PIN Code:</label>
+                    <input type="text" id="customer-pincode" name="pincode" placeholder="6-digit PIN code" required>
+                </div>
+            </form>
+        </section>
+
+        <!-- Order Summary Section -->
+        <section id="order-summary-section">
+            <h3>Order Summary</h3>
+            <div id="checkout-items-preview">
+                <p><em>Your selected cart items will be reviewed here.</em></p>
+            </div>
+
+            <!-- Total Amount Placeholder -->
+            <p><strong>Total Amount:</strong> <span id="checkout-total-amount">₹0</span></p>
+
+            <!-- Place Demo Order Button Placeholder -->
+            <button type="button" id="place-demo-order-btn">Place Demo Order</button>
+        </section>
+
+        <!-- Demo Order Confirmation Placeholder -->
+        <section id="demo-confirmation-container" hidden>
+            <h3>Demo Order Confirmed!</h3>
+            <p>Thank you for shopping with Trendora. Your demo order has been placed successfully.</p>
+            <p><a href="products.html">Continue Shopping</a></p>
+        </section>
+
+        <!-- Navigation Action -->
+        <p><a href="cart.html">&larr; Return to Cart</a></p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trendora. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
